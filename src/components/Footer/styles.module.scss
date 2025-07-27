@@ -1,0 +1,23 @@
+$gap: 1rem;
+
+.footer {
+  background-color: var(--background);;;
+  padding: $gap 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  height: var(--footer-height);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.logged {
+  font-weight: 600;
+  color: var(--primary);
+}

@@ -1,0 +1,21 @@
+$gap: 1rem;
+
+.container {
+  background-color: var(--bg-light);
+}
+
+.products {
+  margin: 0 auto;
+  max-width: var(--container-width);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: $gap;
+  padding: $gap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}

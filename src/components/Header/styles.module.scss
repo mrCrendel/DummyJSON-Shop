@@ -1,0 +1,59 @@
+$primary: var(--primary);
+$bg: var(--background);;
+$shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$gap: 1rem;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $gap 2rem;
+  background-color: $bg;
+  box-shadow: $shadow;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+}
+
+.logo a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $primary;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+.link {
+  font-size: 1rem;
+  color: $primary;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.userName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: $primary;
+    color: #fff;
+  }
+}
